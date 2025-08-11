@@ -1,5 +1,5 @@
 body{
-  background-color: #87F5F5;
+  background-color: #D2D2FF;
 }
 
 #root{
@@ -9,5 +9,11 @@ body{
 
 .App {
   text-align: center;
+  margin: 32px;
+  padding: 32px;
+  min-width: 500px;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
 }
 
