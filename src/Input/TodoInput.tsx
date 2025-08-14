@@ -1,15 +1,16 @@
 import { RiChatNewLine } from "react-icons/ri";
+import "./TodoInput.css";
 
 const TodoInput = () => {
     return(
-        <div>
-            <form>
-                <input></input>
+        <section className={"container"}>
+            <form className={"formContainer"}>
+                <input className={"input"} placeholder="해야할 Todo"></input>
             </form>
-            <button>
+            <button className={"enter"}>
                 {RiChatNewLine({})}
             </button>
-        </div>
+        </section>
     )
 }
 
