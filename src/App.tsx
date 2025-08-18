@@ -3,6 +3,7 @@ import './App.css';
 import TodoHeader from './Header/TodoHeader';
 import TodoInput from './Input/TodoInput';
 import TodoListTools from './Tools/TodoListTools';
+import Divider from './Divider/Divider';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <TodoHeader></TodoHeader>
       <TodoInput></TodoInput>
       <TodoListTools></TodoListTools>
+      <Divider></Divider>
     </main>
   );
 }
