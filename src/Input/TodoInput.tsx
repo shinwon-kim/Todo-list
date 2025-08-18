@@ -8,7 +8,7 @@ const TodoInput = () => {
                 <input className={styles.input} placeholder="해야할 Todo"></input>
             </form>
             <button className={styles.enter}>
-                {RiChatNewLine({})}
+                <RiChatNewLine/>
             </button>
         </section>
     )
