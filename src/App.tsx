@@ -4,6 +4,7 @@ import TodoHeader from './Header/TodoHeader';
 import TodoInput from './Input/TodoInput';
 import TodoListTools from './Tools/TodoListTools';
 import Divider from './Divider/Divider';
+import TodoList from './List/TodoList';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <TodoInput></TodoInput>
       <TodoListTools></TodoListTools>
       <Divider></Divider>
+      <TodoList></TodoList>
     </main>
   );
 }
