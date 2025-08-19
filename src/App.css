@@ -8,7 +8,7 @@ body{
 }
 
 .App {
-  text-align: center;
+  /* text-align: center; */
   margin: 32px;
   padding: 32px;
   min-width: 500px;
