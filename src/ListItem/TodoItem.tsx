@@ -7,11 +7,12 @@ interface TodoItemProps {
 }
 
 const TodoItem = (props:TodoItemProps) => {
+    const isCheck = false;
     return (
-        <li>
-            <FaRegCircleCheck/>
+        <li className={styles.container}>
+            <FaRegCircleCheck className={[styles.checkIcon, `${isCheck ? styles.checkedCircleIcon : styles.unCheckedCircleIcon}`].join(" ")}/>
             <span>{props.text}</span>
-            <IoRemoveCircleOutline></IoRemoveCircleOutline>
+            <IoRemoveCircleOutline className={styles.removeIcon}/>
         </li>
     )
 }
