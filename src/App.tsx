@@ -22,12 +22,18 @@ function App() {
   }
  
   const handleSubmit = () => {
-    console.log("submit");
+    const newTodos = todos.concat({
+      id: Date.now(),
+      text: text,
+      isChecked: false
+    })
+    setTodos(newTodos);
+    setText('');
   }
 
   return (
     <main className="App">
-      <TodoHeader></TodoHeader>
+      <TodoHeader count={todos.filter(todo => !todo.isChecked).length}></TodoHeader>
       <TodoInput text={text} onTextChange={handleTextChange} onSubmit={handleSubmit}></TodoInput>
       <TodoListArea todoCount={todos.length}>
         <TodoListTools></TodoListTools>
