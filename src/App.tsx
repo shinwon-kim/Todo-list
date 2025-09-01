@@ -31,6 +31,14 @@ function App() {
     setText('');
   }
 
+  const handleRemove = (id: number) => {
+    console.log("remvoe", id);
+  }
+
+  const handleToggle = (id: number) => {
+    console.log("remvoe", id);
+  }
+
   return (
     <main className="App">
       <TodoHeader count={todos.filter(todo => !todo.isChecked).length}></TodoHeader>
@@ -38,7 +46,7 @@ function App() {
       <TodoListArea todoCount={todos.length}>
         <TodoListTools></TodoListTools>
         <Divider></Divider>
-        <TodoList todos={todos}></TodoList>
+        <TodoList todos={todos} onRemoveClick={handleRemove} onToggleClick={handleToggle}></TodoList>
       </TodoListArea>
     </main>
   );
