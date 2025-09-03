@@ -36,7 +36,16 @@ function App() {
   }
 
   const handleToggle = (id: number) => {
-    console.log("remvoe", id);
+    const newTodos = todos.map(todo => {
+      if(todo.id === id) {
+        return {
+          ...todo,
+          isChecked: !todo.isChecked
+        }
+      }
+      return todo
+    })
+    setTodos(newTodos)
   }
 
   return (
