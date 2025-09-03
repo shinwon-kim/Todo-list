@@ -22,7 +22,7 @@ const TodoItem = (props:TodoItemProps) => {
             <FaRegCircleCheck className={[styles.checkIcon, `${props.isChecked ? styles.checkedCircleIcon : styles.unCheckedCircleIcon}`].join(" ")}
                 onClick={handleToggleClick}
             />
-            <span>{props.text}</span>
+            <span className={props.isChecked ? styles.linethrough : ""}>{props.text}</span>
             <IoRemoveCircleOutline className={styles.removeIcon}
                 onClick={handleRemoveClick}
             />
