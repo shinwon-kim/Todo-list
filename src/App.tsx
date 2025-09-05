@@ -22,6 +22,9 @@ function App() {
   }
  
   const handleSubmit = () => {
+    if(!text) {
+      return;
+    }
     const newTodos = todos.concat({
       id: Date.now(),
       text: text,
